@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover, header ul li a.active {
+    color: #017143;
+    font-weight: 700;
+    border-bottom: 2px solid #017143;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.textBox h2 {
+    color: #017143;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 800;
+}
+
+.textBox p {
+    color: #333;
+}
+
+.textBox ul {
+    margin-top: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+.textBox ul li {
+    margin-bottom: 10px;
+}
+
+.imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.imgBox img {
+    max-width: 340px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.sci li a:hover {
+    color: #017143;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+/* Additional styles for hover effects and details list */
+.textBox ul {
+    list-style-type: disc;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.textBox ul li {
+    margin-bottom: 10px;
+    color: #666;
+    text-decoration: none;
+}
+
+.menuItem h3:hover {
+    color: #017143;
+}
+
+.menuItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+    header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        max-width: 60px;
+    }
+    header ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    header ul li {
+        margin-bottom: 10px;
+    }
+    .textBox {
+        text-align: center;
+        max-width: 100%;
+    }
+    .textBox h2 {
+        font-size: 2.5em;
+    }
+    .textBox a {
+        padding: 8px 15px;
+    }
+    .imgBox {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .imgBox img {
+        max-width: 100%;
+    }
+    .thumb {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .thumb li {
+        margin: 0 10px;
+    }
+    .sci {
+        position: static;
+        right: 0;
+        transform: none;
+        flex-direction: row;
+    }
+    .sci li {
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Starbucks</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="./img/logo.png" class="logo" alt="Starbucks Logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="new.html">What's New</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out <br> using the form below.</p>
+            </div>
+            <div class="contactForm">
+                <form id="contactForm">
+                    <div class="formGroup">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formGroup">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Starbucks" target="_blank" aria-label="Facebook"><img src="./img/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://x.com/StarbucksIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" aria-label="Twitter"><img src="./img/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/?hl=en" target="_blank" aria-label="Instagram"><img src="./img/instagram.png" alt="Instagram"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            window.location.href = 'thankyou.html'; // Redirect to the thank you page
+        });
+    </script>
+</body>
+</html>

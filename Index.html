@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logo.png" type="image/png"> <!-- Add this line -->
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="menu.html" >Menu</a></li>
+                <li><a href="new.html">What's new</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Starbucks, a global coffeehouse chain, has become synonymous with coffee culture since its inception in 1971. Founded in Seattle, Washington, Starbucks has grown to thousands of locations worldwide, offering a wide range of coffee beverages, teas, and pastries. Known for its high-quality coffee and distinctive customer experience, Starbucks has created a loyal customer base that appreciates the cozy ambiance of its stores, where people can gather, work, or relax. The brand emphasizes ethical sourcing, community engagement, and environmental sustainability, aiming to positively impact both its customers and the planet. Whether it's the signature Frappuccinos, seasonal lattes, or the classic brewed coffee, Starbucks continues to innovate and adapt, remaining a leader in the global coffee industry.</p>
+                <a href="learn.html">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png'); changeCircleColor('#017143')"></a></li>
+            <li><a href="#"><img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png'); changeCircleColor('#eb7495')"></a></li>
+            <li><a href="#"><img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png'); changeCircleColor('#d752b1')"></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Starbucks/"><img src="./img/facebook.png"></a></li>
+            <li><a href="https://x.com/StarbucksIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./img/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/?hl=en"><img src="./img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover, header ul li a.active {
+    color: #017143;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.textBox {
+    margin-bottom: 30px;
+}
+
+.textBox h2 {
+    color: #017143;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 800;
+}
+
+.textBox p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.updatesBox, .contactForm, .infoBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.updateItem, .contactForm, .infoItem {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.updateItem, .infoItem {
+    width: 300px;
+    overflow: hidden;
+}
+
+.updateItem img, .infoItem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.updateInfo, .infoItem {
+    padding: 20px;
+    text-align: center;
+}
+
+.updateInfo h3, .infoItem h3 {
+    font-size: 1.5em;
+    color: #017143;
+    margin: 10px 0;
+}
+
+.updateInfo p, .infoItem p {
+    color: #333;
+}
+
+.updateItem:hover, .infoItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.formGroup input, 
+.formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formGroup textarea {
+    resize: vertical;
+}
+
+button {
+    background: #017143;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #015b39;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.sci li img {
+    max-width: 30px;
+    filter: invert(1);
+}
+
+.sci li a:hover img {
+    filter: invert(0);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+@media (max-width: 767px) {
+    header {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        max-width: 60px;
+    }
+    header ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    header ul li {
+        margin-bottom: 10px;
+    }
+    .textBox {
+        text-align: center;
+        max-width: 100%;
+    }
+    .textBox h2 {
+        font-size: 2.5em;
+    }
+    .textBox a {
+        padding: 8px 15px;
+    }
+    .imgBox {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .imgBox img {
+        max-width: 100%;
+    }
+    .thumb {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .thumb li {
+        margin: 0 10px;
+    }
+    .sci {
+        position: static;
+        right: 0;
+        transform: none;
+        flex-direction: row;
+    }
+    .sci li {
+        margin: 0 5px;
+    }
+}
